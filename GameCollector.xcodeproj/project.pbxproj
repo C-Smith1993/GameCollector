@@ -15,6 +15,8 @@
 		17707A521E5E177700BD345D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17707A501E5E177700BD345D /* LaunchScreen.storyboard */; };
 		17707A5D1E5E177700BD345D /* GameCollectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17707A5C1E5E177700BD345D /* GameCollectorTests.swift */; };
 		17707A681E5E177700BD345D /* GameCollectorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17707A671E5E177700BD345D /* GameCollectorUITests.swift */; };
+		17707A761E5E1F3300BD345D /* FIFA17 Artwork.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 17707A751E5E1F3300BD345D /* FIFA17 Artwork.jpg */; };
+		17707A781E5E211E00BD345D /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17707A771E5E211E00BD345D /* GameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		17707A631E5E177700BD345D /* GameCollectorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameCollectorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		17707A671E5E177700BD345D /* GameCollectorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCollectorUITests.swift; sourceTree = "<group>"; };
 		17707A691E5E177700BD345D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17707A751E5E1F3300BD345D /* FIFA17 Artwork.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "FIFA17 Artwork.jpg"; sourceTree = "<group>"; };
+		17707A771E5E211E00BD345D /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +103,10 @@
 		17707A431E5E177700BD345D /* GameCollector */ = {
 			isa = PBXGroup;
 			children = (
+				17707A751E5E1F3300BD345D /* FIFA17 Artwork.jpg */,
 				17707A441E5E177700BD345D /* AppDelegate.swift */,
 				17707A461E5E177700BD345D /* ViewController.swift */,
+				17707A771E5E211E00BD345D /* GameViewController.swift */,
 				17707A481E5E177700BD345D /* Main.storyboard */,
 				17707A4E1E5E177700BD345D /* Assets.xcassets */,
 				17707A501E5E177700BD345D /* LaunchScreen.storyboard */,
@@ -236,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				17707A521E5E177700BD345D /* LaunchScreen.storyboard in Resources */,
+				17707A761E5E1F3300BD345D /* FIFA17 Artwork.jpg in Resources */,
 				17707A4F1E5E177700BD345D /* Assets.xcassets in Resources */,
 				17707A4A1E5E177700BD345D /* Main.storyboard in Resources */,
 			);
@@ -262,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17707A781E5E211E00BD345D /* GameViewController.swift in Sources */,
 				17707A4D1E5E177700BD345D /* GameCollector.xcdatamodeld in Sources */,
 				17707A471E5E177700BD345D /* ViewController.swift in Sources */,
 				17707A451E5E177700BD345D /* AppDelegate.swift in Sources */,

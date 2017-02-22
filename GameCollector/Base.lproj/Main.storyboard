@@ -32,10 +32,10 @@
             </objects>
             <point key="canvasLocation" x="1076" y="137.18140929535232"/>
         </scene>
-        <!--View Controller-->
+        <!--Game View Controller-->
         <scene sceneID="KOu-RN-f94">
             <objects>
-                <viewController id="hoa-h0-IQy" sceneMemberID="viewController">
+                <viewController id="hoa-h0-IQy" customClass="GameViewController" customModule="GameCollector" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8WC-8E-xqB"/>
                         <viewControllerLayoutGuide type="bottom" id="eK2-0f-lf2"/>
@@ -44,19 +44,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SJj-DD-9zO">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FIFA17 Artwork.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="SJj-DD-9zO">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="0bX-JT-s1o"/>
                                     <constraint firstAttribute="width" constant="280" id="8GJ-GU-qkY"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mt6-vC-1av">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mt6-vC-1av">
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zbN-VV-dro">
                                 <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="addTapped:" destination="hoa-h0-IQy" eventType="touchUpInside" id="G0d-dD-82w"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -72,10 +75,22 @@
                     </view>
                     <navigationItem key="navigationItem" id="63f-nt-LHd">
                         <rightBarButtonItems>
-                            <barButtonItem systemItem="camera" id="pm4-d0-bEq"/>
-                            <barButtonItem title="Photos" id="yLJ-bU-lmG"/>
+                            <barButtonItem systemItem="camera" id="pm4-d0-bEq">
+                                <connections>
+                                    <action selector="cameraTapped:" destination="hoa-h0-IQy" id="mJ3-lq-QBx"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Photos" id="yLJ-bU-lmG">
+                                <connections>
+                                    <action selector="photosTapped:" destination="hoa-h0-IQy" id="bIh-I2-g1T"/>
+                                </connections>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
+                    <connections>
+                        <outlet property="gameImageView" destination="SJj-DD-9zO" id="hxd-9F-vkW"/>
+                        <outlet property="titleTextField" destination="Mt6-vC-1av" id="cOG-yU-Wwa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9U7-Fz-FRD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -100,4 +115,7 @@
             <point key="canvasLocation" x="311" y="137"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="FIFA17 Artwork.jpg" width="800" height="450"/>
+    </resources>
 </document>
